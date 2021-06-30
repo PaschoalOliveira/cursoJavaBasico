@@ -12,11 +12,10 @@ public class Index {
 		String[] nomes = nomeCompleto.split(",");
 		
 		System.out.println("Qual a sua idade?");
-		Integer idade = scanner.nextInt();   //14
-		scanner.nextLine();
+		Integer idade = Integer.valueOf(scanner.nextLine());
 
 		System.out.println("Qual a idadede sua mãe?");
-		Object idadeMae = Integer.valueOf(scanner.nextLine());
+		Integer idadeMae = Integer.valueOf(scanner.nextLine());
 		
 		//Integer iConjuntoIdades = (idade + idadeMae);
 		String conjuntoIdades = idade.toString() + " " + idadeMae.toString();
@@ -25,7 +24,7 @@ public class Index {
 		
 		System.out.println("Qual o seu sexo?");
 		String sexo = scanner.nextLine();
-		Object cSexo = sexo.charAt(0);
+		Character cSexo = sexo.charAt(0);
 		
 		System.out.println("Você Mora no Brasil");
 		Boolean moraBrasil = Boolean.valueOf(scanner.nextLine());
