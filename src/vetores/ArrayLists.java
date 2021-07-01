@@ -7,7 +7,7 @@ public class ArrayLists {
 	public static void main(String[] args) {
 	
 		
-		ArrayList listaNotas = new ArrayList();
+		ArrayList<Double> listaNotas = new ArrayList<Double>();
 		listaNotas.add(10.0);
 		listaNotas.add(7.0);
 		listaNotas.add(3.0);
